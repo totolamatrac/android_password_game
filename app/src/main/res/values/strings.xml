@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FIIIRST</string>
+    <string name="text_btn_add">Ajouter</string>
+    <string name="main_label">Please choose a password</string>
+    <string name="main_title">* Password Game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
