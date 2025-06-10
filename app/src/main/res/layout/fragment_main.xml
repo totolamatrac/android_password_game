@@ -7,34 +7,39 @@
             name="fragment"
             type="com.example.fiiirst.fragments.MainFragment" />
     </data>
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         app:cardUseCompatPadding="true"
-        app:cardBackgroundColor='@{fragment.valid ? @color/green : @color/red}'
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        app:strokeColor='@{fragment.valid ? @color/green_primary : @color/red_primary}'>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp"
-            android:background='@{fragment.valid ? @color/green : @color/red}'>
+            >
             <TextView
                 android:id="@+id/main_fragment_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text='@{fragment.title}'>
+                android:background='@{fragment.valid ? @color/green_secondary : @color/red_secondary}'
+                android:text='@{fragment.title}'
+                android:padding="16dp"
+                android:textSize="15sp">
             </TextView>
             <TextView
                 android:id="@+id/main_fragment_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text='@{fragment.description}'>
+                android:text='@{fragment.description}'
+                android:background='@{fragment.valid ? @color/green_third : @color/red_third}'
+                android:padding="16dp"
+                android:textSize="15sp">
             </TextView>
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </layout>
